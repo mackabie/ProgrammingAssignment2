@@ -5,7 +5,7 @@
 
 
 ## The fuction makeCacheMatrix creates a special "matrix" object that can cache its inverse.
-## This function recieves (i.e., input) a matrix and returns a list of objects, which is this
+## This function recieves (i.e., input) a matrix and returns a list of objects, which in this
 ## case it's a list of function objects ("methods").
 ## The object "matrix and object functions will be accessed and used by cacheSolve.
 
@@ -77,7 +77,7 @@ cacheSolve <- function(x, ...) {                    # the input is the object cr
         if(!is.null(inv.m)) {                       # if the inverse was already cached (i,e, stored);
                                                     # which means that 'inv.m' is not NULL
                 
-                message("getting cached data")      # sendS this message to the console
+                message("getting cached data")      # sends this message to the console
                 return(inv.m)                       # and returns the inverse value stored in the cache
         }
         
@@ -91,7 +91,7 @@ cacheSolve <- function(x, ...) {                    # the input is the object cr
         
         inv.m <- solve(data, ...)                   # computes the inverse for the new matrix 
         
-        x$setsolve(inv.m)                           # stores the calculated inverse value in 'x' 
+        x$setsolve(inv.m)                           # stores the calculates inverse value in 'x' 
         
         inv.m                                       # returns the inverse to the code that called this function 
 }
