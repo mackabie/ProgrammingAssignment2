@@ -51,7 +51,8 @@ makeCacheMatrix <- function(x = matrix()) {        # input 'x' of the function i
         
         
         list(set = set, get = get,                 # This list of funcion object is returns every time the
-                                                   #  makeCacheMatrix is called (i.e., creating a new "special" matrix object.)
+                                                   #  makeCacheMatrix is called (i.e., creating a new "special" 
+                                                   #  matrix object.)
              setsolve = setsolve,                  # It lists the functions ("methods") that are part 
                                                    # of the object.
              getsolve = getsolve)                  # If a function is not on the list it cannot be 
